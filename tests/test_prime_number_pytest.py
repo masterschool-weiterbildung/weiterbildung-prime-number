@@ -44,4 +44,4 @@ class TestPrimeNumber:
                              )
     def test_is_number_divisible_by_other_number(self, number_to_check_if_prime, end_range):
         assert prime_number.is_number_divisible_by_other_number(number_to_check_if_prime, end_range)
-
+        
