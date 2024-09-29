@@ -1,5 +1,6 @@
 NUMBER_BEGIN_TO_CHECK = 2
 
+
 def is_divisible_by(number: int, by: int) -> bool:
     """
     Check if a number is divisible by another number.
