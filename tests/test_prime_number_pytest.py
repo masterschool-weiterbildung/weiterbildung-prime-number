@@ -10,9 +10,8 @@ class TestPrimeNumber:
                                  (11)
                              ]
                              )
-
     def test_is_number_divisible_by_itself_and_greater_than_one(self, number_to_check):
-        assert prime_number.is_number_divisible_by_itself_and_greater_than_one(number_to_check) == True
+        assert prime_number.is_number_divisible_by_itself_and_greater_than_one(number_to_check)
 
     @pytest.mark.parametrize("number_to_check_if_prime",
                              [
@@ -22,9 +21,8 @@ class TestPrimeNumber:
                                  (19)
                              ]
                              )
-
     def test_is_primer(self, number_to_check_if_prime):
-        assert prime_number.is_prime(number_to_check_if_prime) == True
+        assert prime_number.is_prime(number_to_check_if_prime)
 
     @pytest.mark.parametrize("number_to_check_if_prime",
                              [
@@ -36,15 +34,14 @@ class TestPrimeNumber:
                                  (18)
                              ]
                              )
-
     def test_is_not_prime(self, number_to_check_if_prime):
-        assert prime_number.is_prime(number_to_check_if_prime) == False
+        assert not prime_number.is_prime(number_to_check_if_prime)
 
     @pytest.mark.parametrize("number_to_check_if_prime, end_range",
                              [
                                  (10, 10)
                              ]
                              )
-
     def test_is_number_divisible_by_other_number(self, number_to_check_if_prime, end_range):
-        assert prime_number.is_number_divisible_by_other_number(number_to_check_if_prime, end_range) == True
+        assert prime_number.is_number_divisible_by_other_number(number_to_check_if_prime, end_range)
+
